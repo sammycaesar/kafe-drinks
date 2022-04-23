@@ -13,7 +13,6 @@ export const HeroSection = () => {
               Presenting a curated collection of the tasiest cafe drinks out
               there. Inspired by korean cafe vlogs.
             </p>
-            <div className='search-button'>search</div>
           </div>
         </div>
 

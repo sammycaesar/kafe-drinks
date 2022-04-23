@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@300;400;500&display=swap");
 
 html {
   overflow-x: hidden;
@@ -8,7 +8,7 @@ html {
 body {
   margin: 0;
   color: black;
-  background-color: #2b2d2b;
+  background-color: #f6fff7;
 }
 
 h1 {
@@ -25,5 +25,12 @@ p {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 500;
+}
+
+::placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
 }

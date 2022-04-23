@@ -8,7 +8,7 @@ class App extends Component {
     super();
 
     this.state = {
-      cocktails: [],
+      drinks: [],
       searchField: "",
     };
   }
@@ -16,7 +16,7 @@ class App extends Component {
   componentDidMount() {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((response) => response.json())
-      .then((users) => this.setState({ cocktails: users }));
+      .then((users) => this.setState({ drinks: users }));
   }
 
   handleChange = (e) => {
@@ -24,10 +24,11 @@ class App extends Component {
   };
 
   render() {
-    const { cocktails, searchField } = this.state;
-    const filteredCocktails = cocktails.filter((cocktail) =>
-      cocktail.name.toLowerCase().includes(searchField.toLowerCase()),
+    const { drinks, searchField } = this.state;
+    const filteredDrinks = drinks.filter((drink) =>
+      drink.name.toLowerCase().includes(searchField.toLowerCase()),
     );
+
     return (
       <div className='App'>
         <HeroSection />
@@ -35,7 +36,7 @@ class App extends Component {
           placeholder='search a cocktail'
           handleChange={this.handleChange}
         />
-        <CardList cocktails={filteredCocktails} />
+        <CardList drinks={filteredDrinks} />
       </div>
     );
   }

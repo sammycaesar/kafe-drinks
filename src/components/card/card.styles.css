@@ -1,8 +1,8 @@
 .card-container {
   display: flex;
   flex-direction: column;
-  background-color: #D0FFB4;
-
+  background-color: #fff;
+  border: 3px solid #d1e9d4;
   border-radius: 5px;
   padding: 25px;
   cursor: pointer;
@@ -15,4 +15,41 @@
 
 .card-container:hover {
   transform: scale(1.05);
+}
+
+.modal {
+  font-size: 12px;
+  width: 75vw;
+  height: 75vh;
+  background-color: white;
+  padding: 4em;
+}
+
+.modal > .header {
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
 }
