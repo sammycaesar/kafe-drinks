@@ -18,6 +18,7 @@
 }
 
 .modal {
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   width: 75vw;
   height: 75vh;
@@ -40,13 +41,16 @@
   cursor: pointer;
   position: absolute;
   display: block;
-  padding: 2px 5px;
+  width: 4rem;
+  height: 4rem;
   line-height: 20px;
-  right: -10px;
-  top: -10px;
-  font-size: 24px;
-  background: #ffffff;
-  border-radius: 18px;
+  right: -15px;
+  top: -15px;
+  font-size: 40px;
+  background-color: #91c397;
+  color: white;
+  border: none;
+  border-radius: 50%;
 }
 
 .button {

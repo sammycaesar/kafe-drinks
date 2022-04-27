@@ -57,6 +57,5 @@
 .column-2 {
   flex: 1;
   width: 50%;
-  grid-area: column-2;
   margin: 0;
 }
