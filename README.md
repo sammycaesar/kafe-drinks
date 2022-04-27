@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/sammyc/kafe-drinks">
-    <img src="./src/images/kafe-project.png" alt="Logo" width="80" height="80">
+    <img src="./src/images/kafe-project.png" alt="Logo" width="150" height="80">
   </a>
 
 <h3 align="center">Kafe Drinks</h3>
@@ -18,7 +18,7 @@
 
 ## About The Project
 
-[![Kafe Drinks][product-screenshot]](./src/images/kafe-project.png)
+![product-screenshot](./src/images/kafe-project.png)
 
 If you've seen any Korean Cafe Vlog or have visited Korea, you'll know that they make the best drinks! Many people in the comments of a Youtube video beg for recipes. So, it only made sense to make a repository of cafe drinks that you can make in the comfort of your own home.
 <br />
