@@ -1,6 +1,6 @@
 .card-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-color: #fff;
   border: 3px solid #d1e9d4;
   border-radius: 5px;
@@ -27,14 +27,14 @@
 }
 
 .modal > .header {
+  font-family: "Krona One", sans-serif;
   width: 100%;
-  font-size: 18px;
-  text-align: center;
-  padding: 5px;
+  font-size: 5rem;
 }
+
 .modal > .content {
   width: 100%;
-  padding: 10px 5px;
+  padding: 50px 5px;
 }
 
 .modal > .close {
@@ -56,4 +56,66 @@
 .button {
   background-color: transparent;
   border: none;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-item {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.description {
+  padding-top: 20px;
+  font-size: 1.2rem;
+  line-height: 30px;
+}
+
+.wrapper-dt {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+}
+
+.difficulty {
+  display: flex;
+  font-size: 1rem;
+  color: white;
+  background-color: #91c397;
+  border-radius: 1rem;
+  width: 70px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tags li {
+  display: flex;
+  font-size: 1rem;
+  color: #91c397;
+  background-color: white;
+  border: 2px solid #91c397;
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  margin-left: 1rem;
+  height: 30px;
+}
+
+.ingredients {
+  padding-top: 20px;
+}
+
+.ingredients ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  display: flex;
+  flex: 0 1 auto;
 }
