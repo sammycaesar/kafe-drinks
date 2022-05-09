@@ -9,12 +9,18 @@ class App extends Component {
 
     this.state = {
       drinks: [],
+      name: "",
+      difficulty: "",
+      description: "",
+      instructions: "",
+      tags: "",
+      source: "",
       searchField: "",
     };
   }
 
   componentDidMount() {
-    fetch("https://jsonplaceholder.typicode.com/users")
+    fetch("https://kafe-drinks.herokuapp.com/drinks")
       .then((response) => response.json())
       .then((users) => this.setState({ drinks: users }));
   }
