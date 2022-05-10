@@ -13,7 +13,7 @@ class App extends Component {
       difficulty: "",
       description: "",
       instructions: "",
-      tags: "",
+      tags: [],
       source: "",
       searchField: "",
     };
@@ -42,6 +42,7 @@ class App extends Component {
           placeholder='search a cocktail'
           handleChange={this.handleChange}
         />
+
         <CardList drinks={filteredDrinks} />
       </div>
     );

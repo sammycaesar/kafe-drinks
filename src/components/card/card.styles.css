@@ -1,10 +1,9 @@
 .card-container {
+  height: 20rem;
+  width: 20rem;
   display: flex;
-  flex-direction: row;
-  background-color: #fff;
-  border: 3px solid #d1e9d4;
-  border-radius: 5px;
-  padding: 25px;
+  flex-direction: column;
+  padding-bottom: 50px;
   cursor: pointer;
   -moz-osx-font-smoothing: grayscale;
   backface-visibility: hidden;
@@ -17,24 +16,43 @@
   transform: scale(1.05);
 }
 
+.card-image {
+  height: 20rem;
+  width: 20rem;
+}
+
+.card-image img {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-drink h2 {
+  font-family: "Krona One", sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
 .modal {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
-  width: 75vw;
-  height: 75vh;
+  width: 85vw;
+  height: 100%;
   background-color: white;
-  padding: 4em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
-.modal > .header {
+.header {
   font-family: "Krona One", sans-serif;
   width: 100%;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 .modal > .content {
   width: 100%;
-  padding: 50px 5px;
+  padding: 4em;
 }
 
 .modal > .close {
@@ -62,10 +80,29 @@
   display: flex;
 }
 
-.flex-item {
+.flex-item1 {
   display: flex;
   flex-direction: column;
   width: 50%;
+  padding: 4em;
+}
+
+.flex-item2 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.flex-item2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.content-header {
+  font-size: 1rem;
+  font-family: "Krona One", sans-serif;
+  padding-bottom: 10px;
 }
 
 .description {
@@ -90,6 +127,7 @@
   height: 30px;
   justify-content: center;
   align-items: center;
+  padding: 2px 20px;
 }
 
 .tags li {
@@ -115,7 +153,6 @@
   flex-direction: column;
 }
 
-.image {
-  display: flex;
-  flex: 0 1 auto;
+.instructions {
+  padding-top: 20px;
 }
