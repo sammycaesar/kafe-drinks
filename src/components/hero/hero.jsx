@@ -18,7 +18,7 @@ export const HeroSection = () => {
 
         <div className='column-2'>
           <div className='image-placement'>
-            <img src={KafeHero} alt='Coffee Image' />
+            <img src={KafeHero} alt='Coffee' />
           </div>
         </div>
       </div>
